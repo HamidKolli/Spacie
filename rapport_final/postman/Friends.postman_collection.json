@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "10bfcb0d-5f46-4268-a4a3-7cadcbf279d4",
+		"name": "Friends",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get login",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://spacie.fr/api/friend/Fristorm",
+					"protocol": "https",
+					"host": [
+						"spacie",
+						"fr"
+					],
+					"path": [
+						"api",
+						"friend",
+						"Fristorm"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get friends user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://spacie.fr/api/friend/",
+					"protocol": "https",
+					"host": [
+						"spacie",
+						"fr"
+					],
+					"path": [
+						"api",
+						"friend",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addFriend",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJoYW1pZCIsImlhdCI6MTY1MjA5ODY4MSwiZXhwIjoxNjUyMTA1ODgxfQ.SECF_FMD-0Imu8TVUR_mAX8DSt2iLDcveChG7ckRLJg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://spacie.fr/api/friend/Fristorm",
+					"protocol": "https",
+					"host": [
+						"spacie",
+						"fr"
+					],
+					"path": [
+						"api",
+						"friend",
+						"Fristorm"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete friend of connected user",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "Baerer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJoYW1pZCIsImlhdCI6MTY1MjEwNjExNSwiZXhwIjoxNjUyMTEzMzE1fQ.kR3yTQVZbGYr5H0zeBHIspphdEBu3g5LMpYjveTaRXU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://spacie.fr/api/friend/Fristorm",
+					"protocol": "https",
+					"host": [
+						"spacie",
+						"fr"
+					],
+					"path": [
+						"api",
+						"friend",
+						"Fristorm"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "accepter en ami",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "Baerer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJoYW1pZCIsImlhdCI6MTY1MjEwNjExNSwiZXhwIjoxNjUyMTEzMzE1fQ.kR3yTQVZbGYr5H0zeBHIspphdEBu3g5LMpYjveTaRXU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://spacie.fr/api/accept/",
+					"protocol": "https",
+					"host": [
+						"spacie",
+						"fr"
+					],
+					"path": [
+						"api",
+						"accept",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ne pas accepter la demande",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "Baerer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJoYW1pZCIsImlhdCI6MTY1MjEwNjExNSwiZXhwIjoxNjUyMTEzMzE1fQ.kR3yTQVZbGYr5H0zeBHIspphdEBu3g5LMpYjveTaRXU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://spacie.fr/api/demande/{id_demande}",
+					"protocol": "https",
+					"host": [
+						"spacie",
+						"fr"
+					],
+					"path": [
+						"api",
+						"demande",
+						"{id_demande}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,335 @@
+{
+	"info": {
+		"_postman_id": "651d442b-3daf-4a35-a214-15ca81b09604",
+		"name": "message",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "a eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJGcmlzdG9ybSIsImlhdCI6MTY1MjA0MjgwMiwiZXhwIjoxNjUyMDUwMDAyfQ.k3D0vwzLGQwraKXJLp_x19Vd1LvjzuTkk1dWwcVG4mQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n{\n    \"messageText\" : \"je suis la\",\n    \"image\" : \"\",\n    \"priv\" : \"0\",\n    \"login\" : \"Fristorm\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://spacie.fr/api/message/create",
+					"protocol": "https",
+					"host": [
+						"spacie",
+						"fr"
+					],
+					"path": [
+						"api",
+						"message",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "commenter",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\n{\n    \"messageText\" : \"je suis la\",\n    \"image\" : \"\",\n    \"priv\" : \"0\",\n    \"login\" : \"Fristorm\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://spacie.fr/api/message/commentaire/627591ff4d9f15ae6f4ab9dc",
+					"protocol": "https",
+					"host": [
+						"spacie",
+						"fr"
+					],
+					"path": [
+						"api",
+						"message",
+						"commentaire",
+						"627591ff4d9f15ae6f4ab9dc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\n{\n    \"messageText\" : \"haha\",\n    \"image\" : \"\",\n    \"priv\" : \"0\",\n    \"login\" : \"Fristorm\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://spacie.fr/api/message/update/627591ff4d9f15ae6f4ab9dc?=Baerer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJoYW1pZCIsImlhdCI6MTY1MjEwNjExNSwiZXhwIjoxNjUyMTEzMzE1fQ.kR3yTQVZbGYr5H0zeBHIspphdEBu3g5LMpYjveTaRXU",
+					"protocol": "https",
+					"host": [
+						"spacie",
+						"fr"
+					],
+					"path": [
+						"api",
+						"message",
+						"update",
+						"627591ff4d9f15ae6f4ab9dc"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "Baerer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJoYW1pZCIsImlhdCI6MTY1MjEwNjExNSwiZXhwIjoxNjUyMTEzMzE1fQ.kR3yTQVZbGYr5H0zeBHIspphdEBu3g5LMpYjveTaRXU"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://spacie.fr/api/message/",
+					"protocol": "https",
+					"host": [
+						"spacie",
+						"fr"
+					],
+					"path": [
+						"api",
+						"message",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getComment",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://spacie.fr/api/message/commentaire/627591ff4d9f15ae6f4ab9dc",
+					"protocol": "https",
+					"host": [
+						"spacie",
+						"fr"
+					],
+					"path": [
+						"api",
+						"message",
+						"commentaire",
+						"627591ff4d9f15ae6f4ab9dc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "",
+						"value": "Baerer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJoYW1pZCIsImlhdCI6MTY1MjEwNjExNSwiZXhwIjoxNjUyMTEzMzE1fQ.kR3yTQVZbGYr5H0zeBHIspphdEBu3g5LMpYjveTaRXU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://spacie.fr/api/message/627591ff4d9f15ae6f4ab9dc",
+					"protocol": "https",
+					"host": [
+						"spacie",
+						"fr"
+					],
+					"path": [
+						"api",
+						"message",
+						"627591ff4d9f15ae6f4ab9dc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "recherche",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \"message\": \"Bonjour\",\n \"login\" : \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://spacie.fr/api/message/recherche",
+					"protocol": "https",
+					"host": [
+						"spacie",
+						"fr"
+					],
+					"path": [
+						"api",
+						"message",
+						"recherche"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "recherche hashtag",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \"message\": \"#WEB3.0\",\n \"login\" : \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://spacie.fr/api/message/recherche/hashtags",
+					"protocol": "https",
+					"host": [
+						"spacie",
+						"fr"
+					],
+					"path": [
+						"api",
+						"message",
+						"recherche",
+						"hashtags"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "repost",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "Baerer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJoYW1pZCIsImlhdCI6MTY1MjEwNjExNSwiZXhwIjoxNjUyMTEzMzE1fQ.kR3yTQVZbGYr5H0zeBHIspphdEBu3g5LMpYjveTaRXU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \"login\" : \"Fristorm\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://spacie.fr/api/message/repost/627591ff4d9f15ae6f4ab9dc",
+					"protocol": "https",
+					"host": [
+						"spacie",
+						"fr"
+					],
+					"path": [
+						"api",
+						"message",
+						"repost",
+						"627591ff4d9f15ae6f4ab9dc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "star",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "Baerer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJoYW1pZCIsImlhdCI6MTY1MjEwNjExNSwiZXhwIjoxNjUyMTEzMzE1fQ.kR3yTQVZbGYr5H0zeBHIspphdEBu3g5LMpYjveTaRXU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"message_id\": \"627591ff4d9f15ae6f4ab9dc\",\"isLiked\" :\"false\"} ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://spacie.fr/api/message/star",
+					"protocol": "https",
+					"host": [
+						"spacie",
+						"fr"
+					],
+					"path": [
+						"api",
+						"message",
+						"star"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
